@@ -1,5 +1,5 @@
 const Video = ({ video }) =>{
-    console.log(video);
+    console.log(video.snippet.resourceId.videoId);//playVideo={setVideo(k.snippet.resourceId.videoId)}
     return (
         <div className="video">
             <img src={`${video.snippet.thumbnails.high.url}`} alt=""/>
