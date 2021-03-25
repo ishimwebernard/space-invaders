@@ -9,6 +9,7 @@ const YOUTUBE_PLAYLIST_ITEMS = "https://www.googleapis.com/youtube/v3/playlistIt
 let data;
 function App() {
   const [videos, setVideos] = useState([]);
+  const [currentVideo, setCurrentVideo] = useState('ZhRvd0bzIoE');
   useEffect(()=>{
     const getVideos = async()=>{
       const fetchedData = await fetchVideos();
@@ -21,13 +22,16 @@ function App() {
        data = await res.json();
       return data.items;
     };
+    const playThisVideo = (video) =>{
+      setCurrentVideo(video)
+    }
 
   return (
     <div className="App">
     <Header />
-    <ReactYoutube />
+    <ReactYoutube videoId={currentVideo}/>
     <h1>Playlist Items</h1>
-    <Videos set={data}/>
+    <Videos set={data} onChange={playThisVideo} />
     </div>
   );
 }
