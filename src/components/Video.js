@@ -3,6 +3,8 @@ const Video = ({ video, onChange }) =>{
     return (
         <div className="video" onClick={()=>{
             onChange(video.snippet.resourceId.videoId);
+            const player = document.getElementsByClassName('videoPlayer')[0];
+            player.scrollIntoView({ behavior: `smooth`})
         }}>
             <img src={`${video.snippet.thumbnails.high.url}`} alt=""/>
             <p className="title">{`${video.snippet.title}`}</p>

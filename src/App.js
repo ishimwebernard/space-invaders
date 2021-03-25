@@ -9,7 +9,7 @@ const YOUTUBE_PLAYLIST_ITEMS = "https://www.googleapis.com/youtube/v3/playlistIt
 let data;
 function App() {
   const [videos, setVideos] = useState([]);
-  const [currentVideo, setCurrentVideo] = useState('ZhRvd0bzIoE');
+  const [currentVideo, setCurrentVideo] = useState('nQWFzMvCfLE');
   useEffect(()=>{
     const getVideos = async()=>{
       const fetchedData = await fetchVideos();
@@ -18,7 +18,7 @@ function App() {
     getVideos();
     }, []); 
     const fetchVideos = async()=>{
-      const res = await fetch(`${YOUTUBE_PLAYLIST_ITEMS}?part=snippet&playlistId=PLAE2A24C2B39F82E0&key=${process.env.REACT_APP_GOOGLE_APIS_KEY}`);
+      const res = await fetch(`${YOUTUBE_PLAYLIST_ITEMS}?part=snippet&maxResults=50&playlistId=PLWvahZRxLnLPV5ECCHvmLuus6Tjmv4Oir&key=${process.env.REACT_APP_GOOGLE_APIS_KEY}`);
        data = await res.json();
       return data.items;
     };
@@ -28,7 +28,7 @@ function App() {
 
   return (
     <div className="App">
-    <Header />
+    <Header className="header" />
     <ReactYoutube videoId={currentVideo}/>
     <h1>Playlist Items</h1>
     <Videos set={data} onChange={playThisVideo} />
