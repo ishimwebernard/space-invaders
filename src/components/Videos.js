@@ -1,6 +1,6 @@
 import Video from './Video';
 let videos;
-const Videos = ({ set, onChange }) =>{
+const Videos = ({ set, onChange}) =>{
     try{
         
         videos = set.items.map((k)=>(
@@ -10,7 +10,7 @@ const Videos = ({ set, onChange }) =>{
 
     }
     return (
-      <div className="video-set">
+      <div id="videos" className="flex-none float-right items-center h-full overflow-y-scroll">
         {videos}
       </div>
     )

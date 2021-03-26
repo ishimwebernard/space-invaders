@@ -11,7 +11,7 @@ const YoutubeVideo = ({ videoId }) =>{
           },
         };
   return (
-    <YouTube className="videoPlayer" videoId={videoId} opts={opts} />
+    <YouTube id="videoPlayer" className="row-span-2" videoId={videoId} opts={opts} />
   )
 }
 export default YoutubeVideo;

@@ -1,71 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300&display=swap');
-*{
-  font-family: 'Assistant', sans-serif;
-  font-weight: 200;
-}
-body, html{
-  width: 80%;
-  height: 100%;
-  align-items: center;
-  padding-left: 10%;
-}
-
-button{
-  color: #fff;
-  font-weight: 300;
-}
-span{
-  color: #F49254;
-  text-shadow: 1px 1px rgb(116, 116, 116);
-  font-weight: 700;
-}
-.orange-grad{
-  background: linear-gradient(180deg, #F49254, #B24D0D);
-}
-.video-set{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  width:100%;
-}
-.video{
-  display: flex;
-  flex-direction: column;
-  border: 1px #F49254 solid;
-  width: 97.5%;
-  margin-top: 50px;
-  cursor: pointer;
-}
-.video:hover{
-  background: linear-gradient(180deg, #F49254, #B24D0D);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html,body{
+    height: 100%;
+    width:100%;
+    font-size: 14px;
 
 }
-.video img{
-  width: 100%;
-  height: 150px;
+html{
+    background: linear-gradient(180deg, #fff, #EAEAF4);
 }
-.video .title{
-  font-size: 1.5rem;
+#app{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: 100%;
 }
-.video .title{
-  opacity: 60%;
-  font-size: 1rem;
-  font-weight: 700;
+#videos{
+    height: 55rem;
+    overflow-y: scroll;
 }
-.video .date-set{
-  display: flex;
-  flex-direction: row;
-}
-.video .date-set img{
-  height: 10px;
-  width: 10px;
-}
-.video .date-set .date{
-  opacity: 60%;
-  font-size: 1rem;
-  color: #F49254;
-}
-.big{
-  font-size: 2.5rem;
-}
-
-
