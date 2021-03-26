@@ -39,7 +39,7 @@ function App() {
     <div  className="w-full max-w-full">
     <Header className="header" />
     <div id="app" className="space-x-4 w-full">
-    <div>
+    <div className="py-2">
     <ReactYoutube className=""  videoId={currentVideo}/>
     <Description  videoName={videoName} videoDescription={videoDescription}/>
     </div>
