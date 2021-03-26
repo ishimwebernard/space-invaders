@@ -8,6 +8,7 @@ const Header = () =>{
                 document.getElementById('videos').style.display = "flex";
                 console.log('Clicked');
             }}>Playlist</button>
+            
        </div>
     )
 }
