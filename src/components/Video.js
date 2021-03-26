@@ -1,7 +1,7 @@
 const Video = ({ video, onChange}) =>{
     console.log(video);//playVideo={setVideo(k.snippet.resourceId.videoId)}
     return (
-        <div className="flex mt-4 mx-w-auto  rounded-xl shadow-md space-x-4"  onClick={()=>{
+        <div className="flex mt-4 mx-w-auto  rounded-xl shadow-md space-x-4 sm:flex-none"  onClick={()=>{
             onChange(video.snippet.resourceId.videoId, `${video.snippet.title}`, video.snippet.description);
             const player = document.getElementById('top');
             player.scrollIntoView({ behavior: `smooth`})
