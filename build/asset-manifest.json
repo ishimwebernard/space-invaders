@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/space-invaders/static/css/main.1b954a91.chunk.css",
-    "main.js": "/space-invaders/static/js/main.c6dd6b16.chunk.js",
-    "main.js.map": "/space-invaders/static/js/main.c6dd6b16.chunk.js.map",
+    "main.css": "/space-invaders/static/css/main.6d8e12c9.chunk.css",
+    "main.js": "/space-invaders/static/js/main.6f603447.chunk.js",
+    "main.js.map": "/space-invaders/static/js/main.6f603447.chunk.js.map",
     "runtime-main.js": "/space-invaders/static/js/runtime-main.0c752be1.js",
     "runtime-main.js.map": "/space-invaders/static/js/runtime-main.0c752be1.js.map",
     "static/js/2.ca30bf29.chunk.js": "/space-invaders/static/js/2.ca30bf29.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.b7230d07.chunk.js": "/space-invaders/static/js/3.b7230d07.chunk.js",
     "static/js/3.b7230d07.chunk.js.map": "/space-invaders/static/js/3.b7230d07.chunk.js.map",
     "index.html": "/space-invaders/index.html",
-    "static/css/main.1b954a91.chunk.css.map": "/space-invaders/static/css/main.1b954a91.chunk.css.map",
+    "static/css/main.6d8e12c9.chunk.css.map": "/space-invaders/static/css/main.6d8e12c9.chunk.css.map",
     "static/js/2.ca30bf29.chunk.js.LICENSE.txt": "/space-invaders/static/js/2.ca30bf29.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.0c752be1.js",
     "static/js/2.ca30bf29.chunk.js",
-    "static/css/main.1b954a91.chunk.css",
-    "static/js/main.c6dd6b16.chunk.js"
+    "static/css/main.6d8e12c9.chunk.css",
+    "static/js/main.6f603447.chunk.js"
   ]
 }
