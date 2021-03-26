@@ -1,10 +1,19 @@
 const Video = ({ video, onChange}) =>{
     console.log(video);//playVideo={setVideo(k.snippet.resourceId.videoId)}
+    const revealVideos = () =>{
+        const k = document.getElementById("videos");
+        if(k.style.display == "none"){
+            k.style.display = "block";
+        }else{
+            k.style.display = "none";
+        }
+    }
     return (
-        <div className="flex mt-4 mx-w-auto  rounded-xl shadow-md space-x-4 sm:flex-none"  onClick={()=>{
+        <div className="smv flex mt-4 mx-w-auto  rounded-xl shadow-md space-x-4"  onClick={()=>{
             onChange(video.snippet.resourceId.videoId, `${video.snippet.title}`, video.snippet.description);
             const player = document.getElementById('top');
-            player.scrollIntoView({ behavior: `smooth`})
+            player.scrollIntoView({ behavior: `smooth`});
+            revealVideos();
         }}>
             <img className="h-40 w-40" src={`${video.snippet.thumbnails.high.url}`} alt=""/>
             <div>

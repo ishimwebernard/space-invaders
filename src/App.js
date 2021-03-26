@@ -36,7 +36,8 @@ function App() {
     }
 
   return (
-    <div  className="w-full max-w-full">
+    <div id="whole"  className="w-full max-w-full">
+    <div id="filler"> </div>
     <Header className="header" />
     <div id="app" className="space-x-4 w-full">
     <div className="py-2">
