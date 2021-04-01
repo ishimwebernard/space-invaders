@@ -2,7 +2,7 @@ import Video from './Video';
 let videos;
 const Videos = ({ set, onChange}) =>{
     try{
-        
+        console.log(set)
         videos = set.items.map((k)=>(
             <Video video={k} onChange={onChange} />
         ))
